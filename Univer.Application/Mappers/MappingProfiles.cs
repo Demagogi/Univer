@@ -9,6 +9,8 @@ namespace Univer.Application.Mappers
         public MappingProfiles()
         {
             CreateMap<Lecturer, LecturerDto>().ReverseMap();
+            CreateMap<CreateLecturerDto, Lecturer>();
+            CreateMap<UpdateLecturerDto, Lecturer>();
         }
     }
 }
