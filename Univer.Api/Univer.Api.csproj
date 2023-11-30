@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Univer.Application\Univer.Application.csproj" />
+    <ProjectReference Include="..\Univer.Domain\Univer.Domain.csproj" />
     <ProjectReference Include="..\Univer.Infrastructure\Univer.Infrastructure.csproj" />
   </ItemGroup>
 

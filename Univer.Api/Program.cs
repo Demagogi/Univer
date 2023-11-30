@@ -23,7 +23,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ILecturerRepository, LecturerRepository>();
 
 builder.Services.AddMediatR(config => config.RegisterServicesFromAssembly(Assembly.GetAssembly(typeof(CreateLecturerCommand))));
-builder.Services.AddAutoMapper(Assembly.GetAssembly(typeof(MappingProfiles)));
+builder.Services.AddAutoMapper(config => config.AddProfile(typeof(MappingProfiles)), Assembly.GetAssembly(typeof(MappingProfiles)));
 
 var app = builder.Build();
 
